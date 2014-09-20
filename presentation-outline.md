@@ -14,17 +14,16 @@ Let's dive in:
 
 Two main problems with hip replacement: 
 
-1. Muscular damage from surgery
-
-2. Changes the forces in the joint from removing human tissues and adding metal
+1. Muscular: that is, healing the (major) muscular damage from surgery
+2. Neural: Meaning, accustoming to new joint behavior (Replacing human tissues with metal results in a very different joint!)
 
 So, performing daily activities (walking, climbing stairs, etc), as before is a huge challenge.
 Many patients find that their old muscular activation patterns don't work properly with their damaged muscles and new hip joint.
-Thus, physical therapy is an important step to both: regrow muscle tissue and re-learn proper muscular activation patterns.
+Thus, physical therapy is an important step to both: A. regrow muscle tissue and B. re-learn proper muscular activation patterns.
 
 ## Permanent Damage
 
-To make matters worse, if healthy patterns are not learned in about six months, improper muscular activation patterns will set in and can be hellish to undo.
+To make matters worse, if healthy patterns are not learned in the first six months after surgery, improper muscular activation patterns will set in and can be hellish to undo.
 
 So, what's the lay of the land?
 
