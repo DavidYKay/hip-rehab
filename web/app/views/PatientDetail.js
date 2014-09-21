@@ -9,6 +9,8 @@ angular.module('myApp.PatientDetail', ['ngRoute'])
   });
 }])
 
-.controller('PatientDetailCtrl', [function() {
-
-}]);
+.controller('PatientDetailCtrl',
+  function PatientDetailCtrl($scope) {
+    $scope.patient = {name: "David Kay", id: 3};
+  }
+);
