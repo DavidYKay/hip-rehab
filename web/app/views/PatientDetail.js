@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.PatientDetail', ['ngRoute'])
+angular.module('myApp.PatientDetail', ['ngRoute', 'ngTable'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/patients/:patientId', {
@@ -10,7 +10,25 @@ angular.module('myApp.PatientDetail', ['ngRoute'])
 }])
 
 .controller('PatientDetailCtrl',
-  function PatientDetailCtrl($scope, $routeParams, $firebase, Page) {
+  function PatientDetailCtrl($scope, $routeParams, $firebase, Page, ngTableParams) {
+
+    $scope.patients = [
+{name: "Suzie Q", id: 1},
+{name: "Joe Bloggs", id: 2},
+{name: "David Kay", id: 3},
+];
+
+
+$scope.tableParams = new ngTableParams({
+  page: 1,   // show first page
+  count: 5  // count per page
+}, {
+  counts: [], // hide page counts control
+  total: 1,  // value less than count hide pagination
+  getData: function($defer, params) {
+    //$defer.resolve(data.slice((params.page() - 1) * params.count(), params.page() * params.count()));
+  }
+});
 
     $scope.patientId = $routeParams.patientId;
 
@@ -32,16 +50,34 @@ angular.module('myApp.PatientDetail', ['ngRoute'])
     };
 
     $scope.$watch('patient', function(newValue, oldValue) {
-      var trials = [];
-      for (var trialDate in $scope.patient.rom) {
-	var trial = $scope.patient.rom[trialDate];
-	trials.push({
-	  date: trialDate,
-	  results: trial
-	});
+      if (newValue != null) {
+	var headers = [""];
+
+	var extension = ["Extension:"];
+	var adduction = ["Adduction:"];
+	var abduction = ["Abduction:"];
+
+	for (var trialDate in $scope.patient.rom) {
+	  var trial = $scope.patient.rom[trialDate];
+
+	  headers.push(trialDate);
+
+	  extension.push(trial.extension);
+	  adduction.push(trial.adduction);
+	  abduction.push(trial.abduction);
+	}
+
+	$scope.headers = headers;
+	$scope.rows    = [
+	  extension,
+	  adduction,
+	  abduction
+	];
+      } else {
+	console.log("null value. not reacting to it.");
       }
-      $scope.trials = trials;
     });
+
     //var newPatient = $scope.patient;
     //var nestedPatient = $scope.patient.patient;
 

@@ -2,29 +2,23 @@
   <div class="large-8 columns">
     <h1>Patient Detail: {{ patient.name }}</h1>
 
-
     <table>
       <thead>
 	<tr>
-	  <th ng-repeat="trial in trials">
-	    {{ trial.date }}
+	  <th ng-repeat="header in headers">
+	    {{ header }}
 	  </th>
 	</tr>
       </thead>
       <tbody>
 
-      <tr ng-repeat="result in trial.results">
-	  <!--<div>-->
-	  <!--</div>-->
-	  <td>
-	    {{ result }}
-	  </td>
-	<!--</a>-->
-	<!--<td ng-repeat="result in patient.results">-->
-	  <!--{{ result }}-->
-	<!--</td>-->
+      <tr ng-repeat="row in rows">
+	<td ng-repeat="cell in row">
+	  {{ cell }}
+	</td>
       </tr>
       </tbody>
+
     </table>
 
     <a href="#/patients/{{patient.id}}/contact">
