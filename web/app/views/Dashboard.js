@@ -9,6 +9,9 @@ angular.module('myApp.Dashboard', ['ngRoute'])
   });
 }])
 
-.controller('DashboardCtrl', [function() {
+.controller('DashboardCtrl', function DashboardCtrl($scope, Page) {
 
-}]);
+  $scope.pageName = "Dashboard";
+  Page.setTitle('Dashboard');
+
+});

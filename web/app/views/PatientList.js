@@ -9,7 +9,8 @@ angular.module('myApp.PatientList', ['ngRoute'])
   });
 }])
 
-.controller('PatientListCtrl', function PatientListCtrl($scope) {
+.controller('PatientListCtrl', function PatientListCtrl($scope, Page) {
+  Page.setTitle('Patient List');
   $scope.patients = [
     {name: "Suzie Q", id: 1},
     {name: "Joe Bloggs", id: 2},
