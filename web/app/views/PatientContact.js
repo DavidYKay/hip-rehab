@@ -3,7 +3,7 @@
 angular.module('myApp.PatientContact', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/PatientContact', {
+  $routeProvider.when('/patients/:id/contact', {
     templateUrl: 'views/PatientContact.html',
     controller: 'PatientContactCtrl'
   });
