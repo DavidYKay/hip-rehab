@@ -49,22 +49,38 @@ $scope.tableParams = new ngTableParams({
       return true;
     };
 
+    var guid = (function() {
+      function s4() {
+	return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+      }
+      return function() {
+	return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+      s4() + '-' + s4() + s4() + s4();
+      };
+    })();
+
+    var makeUuid = function() {
+      return guid();
+    };
+
     $scope.$watch('patient', function(newValue, oldValue) {
       if (newValue != null) {
 	var headers = [""];
 
-	var extension = ["Extension:"];
-	var adduction = ["Adduction:"];
-	var abduction = ["Abduction:"];
+	var extension = [{id: makeUuid(), value: "Extension:"}];
+	var adduction = [{id: makeUuid(), value: "Adduction:"}];
+	var abduction = [{id: makeUuid(), value: "Abduction:"}];
 
 	for (var trialDate in $scope.patient.rom) {
 	  var trial = $scope.patient.rom[trialDate];
 
 	  headers.push(trialDate);
 
-	  extension.push(trial.extension);
-	  adduction.push(trial.adduction);
-	  abduction.push(trial.abduction);
+	  extension.push({id: makeUuid(), value: trial.extension});
+	  adduction.push({id: makeUuid(), value: trial.adduction});
+	  abduction.push({id: makeUuid(), value: trial.abduction});
 	}
 
 	$scope.headers = headers;
