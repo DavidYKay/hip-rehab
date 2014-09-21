@@ -9,6 +9,11 @@ angular.module('myApp.PatientList', ['ngRoute'])
   });
 }])
 
-.controller('PatientListCtrl', [function() {
-
-}]);
+.controller('PatientListCtrl', function PatientListCtrl($scope) {
+  $scope.patients = [
+    {name: "Suzie Q", id: 1},
+    {name: "Joe Bloggs", id: 2},
+    {name: "David Kay", id: 3},
+  ];
+}
+);
