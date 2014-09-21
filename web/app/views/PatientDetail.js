@@ -17,11 +17,38 @@ angular.module('myApp.PatientDetail', ['ngRoute'])
     //$scope.patient = {name: "David Kay", id: 3};
     Page.setTitle('Patient Detail');
 
-    var ref = new Firebase("https://glowing-fire-8184.firebaseio.com/data");
+    var url = "https://glowing-fire-8184.firebaseio.com/patients/" + $scope.patientId;
+    var ref = new Firebase(url);
     var sync = $firebase(ref);
-    var syncObject = sync.$asObject();
-    // synchronize the object with a three-way data binding
-    syncObject.$bindTo($scope, "data");
+    var patient = sync.$asObject();
+
+    console.log("patient: " + patient);
+
+    patient.$bindTo($scope, "patient");
+
+
+    $scope.isSuccess = function(trial) {
+      return true;
+    };
+
+    $scope.$watch('patient', function(newValue, oldValue) {
+      var trials = [];
+      for (var trialDate in $scope.patient.rom) {
+	var trial = $scope.patient.rom[trialDate];
+	trials.push({
+	  date: trialDate,
+	  results: trial
+	});
+      }
+      $scope.trials = trials;
+    });
+    //var newPatient = $scope.patient;
+    //var nestedPatient = $scope.patient.patient;
+
+    //console.log("newPatient: " + newPatient);
+    //console.log("nestedPatient: " + nestedPatient);
+
+
 
   }
 );
