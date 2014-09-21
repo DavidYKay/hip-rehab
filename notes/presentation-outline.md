@@ -6,19 +6,26 @@ What I've been working on this weekend is a similar solution, aimed at hip-repla
 
 Our goal is to help hip-replacement patients achieve the best possible recovery after surgery.
 
+*BEAT*
+
 Let's dive in:
 
 # Problem
 
 ## Early Difficulty
 
-Two main problems with hip replacement: 
+There are over 135,000 Hip replacements performed each year in the USA alone. Due to an aging population, we have seen this number rise steadily. 
 
-1. Muscular: that is, healing the (major) muscular damage from surgery
+It's no wonder why, as Hip replacement can remove excruciating pain, allow the patient to resume life as normal, and in many cases, restore a patient's ability to participate in sports. 
+
+However, recovering from surgery is an involved process, and there are two major hurdles to jump before they are home free. 
+
+1. Muscular: that is, healing the (major) muscular damage from surgery. Many surgeons come in from behind, doing great damage to the hamstrings and glutes. 
 2. Neural: Meaning, accustoming to new joint behavior (Replacing human tissues with metal results in a very different joint!)
 
 So, performing daily activities (walking, climbing stairs, etc), as before is a huge challenge.
-Many patients find that their old muscular activation patterns don't work properly with their damaged muscles and new hip joint.
+Between their damaged muscles and new hip joint, many patients find that their old muscular activation patterns feel awkward and unnatural. 
+
 Thus, physical therapy is an important step to both: A. regrow muscle tissue and B. re-learn proper muscular activation patterns.
 
 ## Permanent Damage
@@ -27,50 +34,59 @@ To make matters worse, if healthy patterns are not learned in the first six mont
 
 So, what's the lay of the land?
 
+There are some folks who adhere to their programs and have no issue. That's terrific! but today we are focusing on the problem children, of which there are three kinds:
+
 * Some patients don't go to PT at all. 
 * Some patients go to PT, but don't stick with their at-home program. 
-* Many patients may go to PT, stick with their program, but it's not properly customized to their needs.
+* Many patients may go to PT, stick with their program, but it's not properly customized to their needs, resulting in suboptimal results. 
 
 Clearly, there's room for improvement in PT.
 
 ## Provider impact
 
-OK, so that's the patient side. Why do providers care?
-Well, hopefully out of the goodness of their hearts, 
-*half-BEAT*
-but providers can come under fire for poor patient results, either in the form of lawsuits or ACA penalties patient readmission. 
+OK, so that's the patient side. Why do providers care about improving hip replacement outcomes?
+
+out of the goodness of their hearts? 
+
+*BEAT*
+
+Hopefully so. 
+
+*grin*
+
+but providers can come under fire for poor patient results, for example in the form of lawsuits or the new Affordable Care Act penalties for patient readmission. 
 
 Surely there's something to be done for them...
 
 # Solution
 
-With those problems in mind,  
+With both patients and providers in mind,  
 
 I propose a solution that:
 
 1. Motivates patients to ADHERE to their programs 
 2. Maximizes chances of a SUCCESSFUL OUTCOME for the patient
-3. And also allows care providers to MITIGATE READMISSION RISK 
+3. And also allows care providers to MITIGATE READMISSION RISK
 
-How? So glad you asked.
+Let's look at patients first:
 
 ## Adherence: education, goals, feedback
-
-1.  Motivates patients to ADHERE to their programs by two methods:
-A. providing them with evidence-based goals 
-B. education on the importance of proper PT for restoration their activities of daily living.
 
 Let patients know the norms.
 Patients may not know what a normal range-of-motion is after surgery. 
 When we welcome them into the program, we can inform them about what to expect based on historic data from people with similar age, sex, location, etc.
 
+"Welcome, Jane, as a 62-year old female with height of 5'2 and weight of 125, a normal result is this flexible. If you work hard, you can do even better!"
+
 We can educate them on issues such as the 6-month window we discussed earlier, so that they are aware that they are in control of their own fates!
 
-In order to deepend their personal commitment to the program, we can ask them to set goals.
+In order to deepend their personal commitment to the program, we can ask them to tweak their goals.
 
 ## Successful Outcome: Personalized guidance and feedback
 
-2. Maximizes patient chances at a SUCCESSFUL OUTCOME by providing personalized guidance and feedback as they practice their physical therapy, 
+Here's the exciting part. Once patients are in the system, they can receive personalized guidance and feedback as they practice their physical therapy. 
+
+Let's take a look:
 
 [SHOW DIAGRAM]
 
@@ -85,13 +101,11 @@ As we see in the diagram,
 
 ## Mitigate readmission risk: Hospital monitoring dashboard
 
-3. Finally, care providers can MITIGATE READMISSION RISK by monitoring objective data on patient adherence and recovery metrics such as range-of-motion.
-
 As a provider, what's the benefit?
 
 Well, apart from the ability to brag about one's success rates and patient outcomes, the ACA penalizes healthcare providers for high readmission rates.
 
-For example, let's say that we know that if a patient has not achieved a full "120/45/30" range of motion by week 12, they are unlikely to achieve a full recovery.
+For example, let's say that we know that if a patient has not achieved a range of motion of "90/30/20" by week 12, he is unlikely to achieve a full recovery. 
 
 As long as that patient or his PT has been logging his progress with our app, we can identify these problem patients ahead of time and give the hospital the opportunity to intervene.
 
@@ -134,7 +148,7 @@ In the short term, we may be able to combine his findings with our patient data 
 
 In the long term, I imagine every hip replacement will be a "smart implant," fully aware of its position at any moment. Think of it: we could conceivably coach patients and monitor their movement in real-time, catching neuromuscular issues far before they develop into real problems!
 
-I don't need to belabor the point: I see a lot of potential in this system.
+I don't need to belabor the point: I think there is a lot of potential for this system to make an impact.
 
 # Wrap
 
