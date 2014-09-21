@@ -1,13 +1,13 @@
 
 <div class="row">
-  <div class="large-1 columns">
+  <div class="large-8 columns">
 
     <h1>Patient List</h1>
 
     <table>
       <thead>
 	<tr>
-	  <th width="200">Patient Name
+	  <th width="150">Patient Name
 	  </th>
 	  <th>September</th>
 	  <th>August</th>
@@ -27,8 +27,10 @@
 	    <a href="#/patients/{{patient.id}}">
 	    {{ patient.name }}
 	</a>
-	<td ng-repeat="result in patient.results">
-	  {{ result }}
+	<td ng-repeat="result in getResults(patient)">
+	  <!--img/red-x.png-->
+	  <img src="{{getImagePath(result.result)}}" height="80" width="80" />
+	  <!--{{ result.result }}-->
 	</td>
       </tr>
       </tbody>
